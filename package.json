@@ -11,7 +11,7 @@
     "nimbleScript"
   ],
   "author": "Tim Shnaider",
-  "license": "MIT",
+  "license": "GPL",
   "readmeFilename": "README.md",
   "directories": {
     "test": "tests"
@@ -24,12 +24,12 @@
     "fs-extra": "~0.5.0",
     "i18next": "~1.5.16",
     "locomotive": "~0.3.5",
-    "nimblescript-business-library": "~0.0.1",
+    "nimblescript-business-library": "git://github.com/nimblescript/business-library.git#master",
     "lodash": "~1.0.0-rc.3",
-    "nimblescript-dynamic-config": "~0.0.1",
-    "nimblescript-logger": "~0.0.1",
+    "nimblescript-config": "git://github.com/nimblescript/config.git#master",
+    "nimblescript-logger": "git://github.com/nimblescript/logger.git#master",
     "passport-hash": "~0.2.0",
-    "passport": "~0.1.15",
+    "passport": "git://github.com/nimblescript/passport.git#master",
     "static-asset": "~0.5.2",
     "swig": "~0.13.4",
     "open": "~0.0.3",
@@ -38,5 +38,12 @@
     "passport-local": "~0.1.6",
     "async": "~0.1.22",
     "uglify-js": "~2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimblescript/app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nimblescript/app/issues"
   }
 }

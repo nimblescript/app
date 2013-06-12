@@ -1,0 +1,71 @@
+﻿{% if item %}
+    <div>
+        <h4><a target="_blank" href="{{ marketplace.url }}/item/{{ item.item_id }}/release/{{ item.item_release_id }}">{{ item.name }} v{{ item.version }} <i class="icon-zoom-in"></i></a>
+            {% if item.average_rating %}
+            <div class="rateit" title="{{ item.average_rating }} out of 5" data-rateit-value="{{ item.average_rating }}" data-rateit-ispreset="true" data-rateit-readonly="true"></div>
+            {% endif %}
+
+        </h4>
+        <div>{{ item.item_summary|raw }}</div>
+        <div>{{ item.item_release_summary|raw }}</div>
+        <div>{{ item.release_notes|raw }}</div>
+    </div>
+    {% if item.item_type == 'script' %}
+    <div><strong data-i18n="marketplace.item_detail.required_modules"></strong> <a class="btn btn-mini edit-settings" data-i18n="marketplace.item_detail.manage_modules"></a></div>
+    <table class="table-striped table-condensed required-modules">
+        <thead>
+            <tr>
+                <th data-i18n="marketplace.item_detail.module"></th>
+                <th data-i18n="marketplace.item_detail.status"></th>
+                <th data-i18n="marketplace.item_detail.action"></th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for required_module in item.script.required_modules %}
+            <tr>
+                <td><a target="module" href="{{ marketplace.url }}/jumpto/module/{{ required_module.module_id }}">{{ required_module.module_id  }}<i class="icon-zoom-in"></i></a></td>
+                <td>
+                    {% set action = '' %}
+                    {% if required_module.module_id in installed_modules %}
+                        {% if required_module.module_id in enabled_modules %}
+                            <span class="status status-installed" data-i18n="marketplace.item_detail.installed"></span>
+                        {% else %}
+                            {% set action = 'enable' %}
+                            <span class="status status-not-enabled" data-i18n="marketplace.item_detail.not_enabled"></span>
+                        {% endif %}
+                    {% else %}
+                        {% if required_module.invalid %}
+                            <span class="status status-invalid" data-i18n="marketplace.item_detail.invalid"></span>
+                        {% else %}
+                            {% if required_module.install_platform|length %}
+                                {% set action = 'install' %}
+                                <span class="status status-not-installed" data-i18n="marketplace.item_detail.not_installed"></span>
+                            {% else %}
+                                <span class="status status-not-supported" data-i18n="marketplace.item_detail.not_supported"></span>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                </td>
+                <td>{% if action|length %}
+                        <label>
+                            <span data-i18n="marketplace.{{ action }}"></span> 
+                            <input type="checkbox" checked="checked" data-platform="{{ required_module.install_platform}}" data-install-code="{{ required_module.install_code}}" 
+                                data-action="{{ action }}" data-module-id="{{ required_module.module_id }}" /></label>
+                        {% if action == 'install' && required_module.platforms|length %}
+                        <!--<div>Platform: <select class="input-small" module_id="{{ required_module.module_id }}" name="platform"></select></div>-->
+                        {% endif %}
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% else %}
+        {% if item.module.install_platform|length == 0 %}
+            <span class="module-not-supported" data-i18n="marketplace.item_detail.not_supported"></span>
+        {% endif %}
+    {% endif %}
+{% else %}
+    <div>No item</div>
+{% endif %}

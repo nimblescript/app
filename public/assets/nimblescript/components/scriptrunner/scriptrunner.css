@@ -1,0 +1,10 @@
+.run-script-results-section .control-label
+{
+    width: 80px;
+    font-size: 12px
+}
+
+.run-script-results-section .controls
+{
+    margin-left: 90px;
+}

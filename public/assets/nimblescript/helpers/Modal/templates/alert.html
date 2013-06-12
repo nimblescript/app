@@ -1,0 +1,15 @@
+﻿<div class="modal dialog">
+    <div class="modal-header">
+        <button type="button" class="close">×</button>
+        <h3>{{ title|default('Alert...') }}</h3>
+    </div>
+    <div class="modal-body">
+        <p class="text">{{ text|raw }}</p>
+        {% if subtext %}<p class="subtext">{{ subtext|raw }}</p>{% endif %}
+    </div>
+    <div class="modal-footer">
+        {% for button in buttons %}
+        <a href="#" class="btn btn-primary" {% if button.disabled %}disabled="disabled"{% endif %} name="{% if button.name %}{{button.name}}{% else %}{{ button.text }}{% endif %}">{{ button.text }}</a>
+        {% endfor %}
+    </div>
+</div>

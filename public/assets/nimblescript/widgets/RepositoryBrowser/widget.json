@@ -1,0 +1,6 @@
+{
+	"id": "xemware.nimblescript.widget.repositorybrowser",
+	"title": "Repository Browser",
+	"main": "RepositoryBrowser",
+	"description": "Browse and action repository items"
+}

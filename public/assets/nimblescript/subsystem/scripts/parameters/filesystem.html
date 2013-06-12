@@ -1,0 +1,16 @@
+﻿{% if selectionMode == 'single' %}
+<div class="input-append">
+    <span data-field-key="{{ id }}" data-type="field" class="input-xxlarge" readonly="readonly"></span>
+    <a class="btn btn-mini" data-action="browse">Browse...</a>
+</div>
+{% else %}
+<div class="input-append">
+    <div>
+        <a class="btn btn-mini trailing-gap" data-action="browse">Add...</a><a class="btn btn-mini trailing-gap" data-action="remove">Remove Selected</a><a class="btn btn-mini trailing-gap" data-action="remove-all">Remove All</a>
+        <a class="btn btn-mini trailing-gap" data-action="load-file-list">Load File List</a><select class="file-lists"></select>
+    </div>
+    <span class="file-list-view"></span>
+    <span data-field-key="{{ id }}" data-type="field" class="offscreen">
+</div>
+{% endif %}
+

@@ -1,0 +1,21 @@
+﻿<div class="modal dialog">
+    <div class="modal-header">
+        <button type="button" class="close">×</button>
+        <h3>{{ title|default('Confirm...') }}</h3>
+    </div>
+    <div class="modal-body">
+        <p class="text">{{ text|raw }}</p>
+        {% if subtext %}<p class="subtext">{{ subtext|raw }}</p>{% endif %}
+        <form>
+            <input type="submit" style="position: absolute; height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" tabindex="-1">
+            <input type="text" name="text" class="active" style="width: 95%" value="{{ value }}">
+            <input type="password" class="hidden" name="password" style="width: 95%">
+        </form>
+        <div class="error-message"></div>
+    </div>
+    <div class="modal-footer">
+        {% for button in buttons %}
+        <a href="#" class="btn btn-primary" {% if button.disabled %}disabled="disabled"{% endif %} name="{% if button.name %}{{button.name}}{% else %}{{ button.text }}{% endif %}">{{ button.text }}</a>
+        {% endfor %}
+    </div>
+</div>

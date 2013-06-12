@@ -1,0 +1,13 @@
+﻿<tr data-module-id="{{ id }}">
+    <td class="module-title">{{ id }}</td>
+    <td class="module-version">{{ version }}</td>
+    <td class="module-enabled"><input type="checkbox" {% if enabled %}checked="checked"{% endif %}><span class="enabled-text">Enabled</span></td>
+</tr>
+<tr>
+    <td class="module-description" colspan="3">{{ description }} </td>
+</tr>
+{% for moduleSetting in settingOptions%}
+<tr data-module-id="{{id}}" data-setting-id="{{moduleSetting.id}}">
+	<td colspan="3">{{ moduleSetting.title}}: <input type="text" style="width: 400px"/></td>
+</tr>
+{% endfor %}

@@ -1,0 +1,21 @@
+﻿.filelist-editor
+{
+    height: -webkit-calc(100% - 30px);
+    height: calc(100% - 30px);
+    height: -webkit-calc(100% - 30px);
+}
+
+.filelist-outer
+{
+    height: 100%
+}
+
+.filelists
+{
+    width: 250px;
+}
+
+.filelist-editor .select2-choice
+{
+    font-size: 12px;
+}

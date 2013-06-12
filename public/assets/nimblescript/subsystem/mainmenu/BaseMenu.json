@@ -1,0 +1,192 @@
+﻿[
+    {
+        "id": "file",
+        "label": "File",
+        "href": "#",
+		"i18n": "menu.file.label",
+        "subitems": 
+            [
+                {
+                    "id": "document.save",
+                    "label": "Save",
+                    "href": "#",
+					"action": "save",
+					"document-target": "active",
+                    "i18n": "menu.file.save",
+					"command": "document:command",
+					"shortcut": "Ctrl-S"
+                },
+                {
+                    "id": "document.saveas",
+                    "label": "Save as...",
+                    "href": "#",
+                    "i18n": "menu.file.saveas",
+					"action": "saveas",
+					"document-target": "active",
+					"command": "document:command"
+                },
+				{ 
+                    "id": "document.close",
+                    "label": "Close",
+                    "href": "#",
+                    "i18n": "menu.file.close",
+					"action": "close",
+					"document-target": "active",
+					"command": "document:command",
+					"shortcut": "Alt-W"
+				},
+				{ 
+                    "id": "file.divider1",
+                    "label": "-"
+				},
+                {
+                    "id": "system.shutdown",
+                    "label": "Shutdown",
+                    "href": "#",
+                    "i18n": "menu.file.shutdown",
+					"command": "system:shutdown"
+                },
+                {
+                    "id": "system.signout",
+                    "label": "Signout",
+                    "href": "#",
+                    "i18n": "menu.file.signout",
+					"command": "system:signout"
+                },
+                {
+                    "id": "system.settings",
+                    "label": "Settings...",
+                    "href": "#",
+                    "i18n": "menu.file.settings",
+					"command": "settings:show"
+                }
+            ]
+    },
+    {
+        "id": "edit",
+        "label": "Edit",
+        "href": "#",
+		"i18n": "menu.edit.label",
+        "subitems": 
+            [
+                {
+                    "id": "edit.copy",
+                    "label": "Copy",
+                    "href": "#",
+                    "i18n": "menu.edit.copy",
+					"action": "copy",
+					"document-target": "active",
+					"command": "edit:command",
+					"shortcut": "Ctrl-C"
+                },
+                {
+                    "id": "edit.cut",
+                    "label": "Cut",
+                    "href": "#",
+                    "i18n": "menu.edit.cut",
+					"action": "cut",
+					"document-target": "active",
+					"command": "edit:command",
+					"shortcut": "Ctrl-X"
+                },
+                {
+                    "id": "edit.paste",
+                    "label": "Paste",
+                    "href": "#",
+                    "i18n": "menu.edit.paste",
+					"action": "paste",
+					"document-target": "active",
+					"command": "edit:command",
+					"shortcut": "Ctrl-V"
+                },
+                {
+                    "id": "edit.undo",
+                    "label": "Undo",
+                    "href": "#",
+                    "i18n": "menu.edit.undo",
+					"action": "undo",
+					"document-target": "active",
+					"command": "edit:command",
+					"shortcut": "Ctrl-Z"
+                },
+                {
+                    "id": "edit.redo",
+                    "label": "Redo",
+                    "href": "#",
+                    "i18n": "menu.edit.redo",
+					"action": "redo",
+					"document-target": "active",
+					"command": "edit:command",
+					"shortcut": "Ctrl-Y"
+                }
+
+            ]
+    },
+    {
+        "id": "view",
+        "label": "View",
+        "href": "#",
+		"i18n": "menu.view.label",
+        "subitems": 
+            [
+                {
+                    "id": "view.widgets",
+                    "label": "Widgets",
+                    "href": "#",
+                    "i18n": "menu.view.widgets.label",
+					"subitems": []
+                },
+                {
+                    "id": "view.documents",
+                    "label": "Documents",
+                    "href": "#",
+                    "i18n": "menu.view.documents.label",
+					"subitems": []
+                },
+				{
+                    "id": "view.startpage",
+                    "label": "Start Page",
+                    "href": "#",
+                    "i18n": "menu.view.documents.startpage",
+					"command": "view:startpage"
+				}
+            ]
+    },
+    {
+        "id": "help",
+        "label": "Help",
+        "href": "#",
+		"i18n": "menu.help.label",
+        "subitems": 
+            [
+                {
+                    "id": "help.about",
+                    "label": "About...",
+                    "href": "#",
+                    "i18n": "menu.help.about",
+					"command": "help:about"
+                },
+                {
+                    "id": "help.doc",
+                    "label": "Documentation",
+                    "href": "http://www.nimblescript.com/doc",
+                    "i18n": "menu.help.documentation",
+					"target": "nsdoc"
+                },
+                {
+                    "id": "help.versioncheck",
+                    "label": "Check for latest version",
+                    "href": "#",
+                    "i18n": "menu.help.version_check",
+					"command": "help:version.check"
+                },
+                {
+                    "id": "help.home",
+                    "label": "Home page",
+                    "href": "http://www.nimblescript.com",
+                    "i18n": "menu.help.home_page",
+					"target": "_blank"
+                }
+            ]
+    }
+]

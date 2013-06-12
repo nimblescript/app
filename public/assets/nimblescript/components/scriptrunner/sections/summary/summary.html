@@ -1,0 +1,7 @@
+﻿<div><span style="font-weight: bold">{{ summary.title }}</span> <span style="font-weight: bold">{% if summary.version %}v{% endif %}{{ summary.version }}</span></div>
+<div><span>{{ summary.author }}</span></div>
+<p></p>
+<div><span class="script-summary-path">{{ iteminfo.path }}</span></div>
+<div><span class="script-summary-size">{{ iteminfo.size }} bytes</span>, <span class="script-summary-last-modified">Last modified {{ iteminfo.lastmodified|date('d-M-Y H:i') }}</span></div>
+<p></p>
+<div><span>{{ summary.description }}</span></div>

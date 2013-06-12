@@ -1,0 +1,44 @@
+﻿.file-explorer > .content > div
+{
+    float: left;
+}
+
+.file-settings
+{
+    padding: 4px;
+}
+
+.file-settings .form-horizontal
+{
+    margin: 0
+}
+.file-settings .control-label
+{
+    font-size: 12px;
+    width: 70px;
+    min-width: 70px;
+}
+
+.file-settings .controls
+{
+    margin-left: 80px;
+}
+
+.path-section > div
+{
+    /*width: 99%; */
+    padding: 2px;
+    border: 1px solid lightGray
+}
+.file-settings input
+{
+    width: 99%;
+    /*padding: 2px 0; */
+}
+
+.file-settings input::-ms-clear
+{
+    display: none;
+    width: 0;
+    height: 0;
+}

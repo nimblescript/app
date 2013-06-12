@@ -1,0 +1,36 @@
+﻿<div class="action" data-i18n="[html]marketplace.publish.publishing_script" data-i18n-options='{ "name": "{{ script_name }}" }'></div>
+<div class="selection">
+    <div class="control-group">
+        <label>
+            <span class="field-label" data-i18n="marketplace.publish.publish_as"></span>
+        </label>
+        <div class="controls">
+            <input type="hidden" class="input-xlarge publishers" />
+            <div class="pull-right">
+                <button type="button" class="btn btn-warning refresh">Refresh</button>
+                &nbsp;
+                <button type="button" class="btn btn-warning help">Help</button>
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        <label>
+            <span class="field-label" data-i18n="marketplace.publish.existing_release"></span>
+        </label>
+        <div class="controls">
+            <input type="hidden" class="input-xlarge items" />
+            <a href="#" data-i18n="marketplace.publish.new_script"></a>
+        </div>
+    </div>
+    <div>
+        <a target="_blank" data-i18n="marketplace.manage_account" href="{{ marketplace_account_url|raw }}"></a>
+    </div>
+</div>
+<div class="section item">
+</div>
+<div class="section release">
+</div>
+<div>
+    <button class="btn btn-success publish btn-large" type="button" data-i18n="marketplace.publish.publish"></button>
+    <span class="result"></span>
+</div>

@@ -1,0 +1,85 @@
+﻿.publish-script .action
+{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.publish-script .section
+{
+    background-color: #F5F5F5;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+.publish-script .section > h4
+{
+    font-weight: bold;
+}
+
+.publish-script h4
+{
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    margin: 2px 0 5px;
+    /*border-bottom: 1px solid #A9A9A9; */
+    padding-bottom: 5px;
+}
+.publish-script .settings-row label > span:first-child
+{
+    min-width: 120px;
+}
+
+.publish-script .control-group 
+{
+    margin-bottom: 3px;
+}
+.publish-script .control-group > label
+{
+    float: left;
+    min-width: 100px;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+
+
+.publish-script .control-group > div.controls
+{
+    margin-left: 105px;
+}
+
+.publish-script label span
+{
+    min-width: 100px;
+}
+
+.publish-script .field-label
+{
+    font-weight: bold
+}
+
+.publish-script .field-row
+{
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.publish-script .field-half
+{
+    width: 45%;
+    margin-right: 10px;
+    float: left;
+}
+
+.publish-script [class^="field"] .field-label
+{
+     display: inline-block;
+     min-width: 80px;  
+}
+
+.publish-script .result
+{
+    font-size: 14px;
+    margin-left: 10px
+}

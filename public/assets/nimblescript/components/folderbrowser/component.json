@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.folderbrowser",
+	"title": "Folder Browser",
+	"main": "FolderBrowser"
+}

@@ -1,0 +1,50 @@
+﻿<div class="centered-content">
+    <span class="label runresult" style="margin-right: 15px"></span>
+    <a class="btn trailing-gap" data-action="run">Run</a> <a class="btn btn-mini trailing-gap" data-action="reset">Reset</a>
+    <a class="btn btn-mini trailing-gap" data-action="edit-script">Edit Script</a>
+    <span class="centered-content" style="margin-bottom: 10px">
+        Favorites: 
+        <select class="favorites input-xlarge trailing-gap"></select><a class="btn btn-mini trailing-gap" data-action="save-favorite">Save</a>
+        <a class="btn btn-mini trailing-gap" data-action="load-favorite">Load</a><a class="btn btn-mini trailing-gap" data-action="delete-favorite">Delete</a>
+    </span>
+    
+</div>
+<div class="accordion" id="accordion-{{id}}">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <div class="centered-content"><a class="accordion-toggle" data-toggle="collapse" href="#run-script-result-{{id}}">Result<span class="label runresult" style="margin-left: 15px"></span></a></div>
+        </div>
+        <div class="accordion-body collapse {% if showResult %}in{% endif %}" data-section="result" id="run-script-result-{{id}}">
+            <div class="accordion-inner">
+                <div class="run-script-results-section">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" href="#run-script-parameters-{{id}}">Parameters</a>
+        </div>
+        <div class="accordion-body collapse {% if showParameters %}in{% endif %}" data-section="parameters" id="run-script-parameters-{{id}}">
+            <div class="accordion-inner">
+                <div class="run-script-parameters-section">
+                    <form class="form-horizontal run-script-parameters">
+                        
+                    </form>
+                    <a class="btn trailing-gap " data-action="run">Run</a><a class="btn btn-mini trailing-gap" data-action="reset">Reset</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" href="#run-script-summary-{{id}}">Details</a>
+        </div>
+        <div class="accordion-body collapse {% if showDetails %}in{% endif %}" data-section="summary" id="run-script-summary-{{id}}">
+            <div class="accordion-inner">
+                <div class="run-script-summary-section" style="margin-bottom: 10px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

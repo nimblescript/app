@@ -1,0 +1,2 @@
+﻿Mods:
+https://github.com/vaal12/jQuery-contextMenu/commit/f640e74c60a5fd61f7831115b718b94cec2cce52

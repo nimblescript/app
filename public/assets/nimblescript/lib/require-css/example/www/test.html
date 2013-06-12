@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<script type='text/javascript' src='../../../require.js'></script>
+<script>
+  require.config({
+    baseUrl: '/Users/guybedford/Projects/OpenClient/www/lib/require-css/example/www/',
+    map: {
+      '*': {
+        'css': 'require-css/css'
+      } 
+    }
+  });
+</script>
+
+<script>
+  require(['app'], function(){});
+  require(['popup'], function(popupHTML) {
+    var div = document.createElement('div');
+    div.innerHTML = popupHTML;
+    document.body.appendChild(div);
+    console.log(div.childNodes[0].offsetWidth);
+  });
+</script>
+
+<body>
+<h1>test</h1>
+</body>

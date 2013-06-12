@@ -1,0 +1,1485 @@
+/*! nimbleScript by xemware limited 
+    Copyright 2012 xemware Limited
+
+    Refer to the license file that came with this application for usage terms 
+*/
+
+
+/* Someone who loves CSS can tidy this up */
+
+body *
+{
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+html, body
+{
+    height: 100%;
+    min-width: 770px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 12px;
+}
+
+.push
+{
+    height: 34px;
+}
+
+footer[role="contentinfo"]
+{
+    height: 17px; /* accounts for padding */
+    color: #666;
+    background: #f5f5f5;
+    padding: 3px 0;
+    border-top: 1px solid;
+}
+
+.wrapper
+{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -24px;
+    width: 100%;
+}
+
+@media (min-width:979px)
+{
+    .wrapper > .container-fluid
+    {
+        padding-top: 60px;
+    }
+}
+
+.container-fluid
+{
+    padding-left: 0px !important
+}
+
+#scripts-tree
+{
+    background-color: white;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#files-tree
+{
+    padding: 8px;
+    background-color: white;
+    position: relative;
+}
+
+
+footer[role="contentinfo"] p
+{
+    margin: 0;
+}
+
+.local-scripts-header
+{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+    .local-scripts-header:after
+    {
+        clear: both;
+    }
+
+ul.dynatree-container
+{
+    font-size: 11px;
+    border: 0 !important;
+    overflow: auto;
+}
+
+    ul.dynatree-container a:focus, span.dynatree-focused a:link
+    {
+        background-color: gray;
+    }
+
+.navbar .nav > li > a
+{
+    border: 0;
+    border-radius: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a.disabled-link, a.disabled-link:visited, a.disabled-link:active, a.disabled-link:hover
+{
+    /* background-color:#d9d9d9 !important; */
+    color: #aaa !important;
+}
+
+.tab-content > .active, .pill-content > .active
+{
+    display: block;
+    margin-top: -1px;
+}
+
+.tab-content
+{
+    background: none repeat scroll 0 0 white;
+}
+
+.tabs
+{
+    margin-bottom: 0;
+}
+/* Override of default margin */
+.tab-pane
+{
+    padding: 2px;
+    margin-bottom: 0px;
+}
+
+
+.nav-tabs
+{
+    margin: 0px;
+}
+
+    .nav-tabs > .file > a
+    {
+        -moz-border-bottom-colors: none;
+        -moz-border-image: none;
+        -o-border-image: none;
+        -webkit-border-image: none;
+        border-image: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: #DDDDDD #DDDDDD transparent;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .nav-tabs > .active > a
+    {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+    .nav-tabs > li > a
+    {
+        color: Black;
+
+    }
+
+.centered-content
+{
+    height: 30px;
+    /*display: table; */
+}
+
+    .centered-content *
+    {
+        vertical-align: middle !important;
+    }
+
+    .centered-content input, .centered-content select
+    {
+        margin-bottom: 0px;
+    }
+
+
+ul.dynatree-container span.td
+{
+    position: absolute;
+    display: inline;
+    overflow: hidden;
+    background-color: white; /* border: 1px solid black; */
+}
+
+    ul.dynatree-container span.td:nth-child(1)
+    {
+        position: static;
+    }
+
+    ul.dynatree-container span.td:nth-child(2)
+    {
+        left: 30%;
+        width: 15%;
+    }
+
+    ul.dynatree-container span.td:nth-child(3)
+    {
+        left: 45%;
+        width: 50%;
+    }
+
+span.dynatree-folder a
+{
+    font-weight: normal !important;
+}
+
+.clearfix
+{
+    float: none !important;
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    float: none;
+}
+
+span.file-tree-header
+{
+    font-weight: bold;
+    background-color: lightGray !important;
+}
+
+li.file-tree-header
+{
+    border: 1px solid black;
+    background-color: lightGray !important;
+}
+
+span.dynatree-selected span.td
+{
+    color: Maroon;
+}
+
+    span.dynatree-selected span.td.file-tree-header
+    {
+        color: Black;
+    }
+
+.trailing-gap
+{
+    margin-right: 5px;
+}
+
+.CodeMirror
+{
+    border: 1px solid black;
+}
+
+.CodeMirror-scroll, .CodeMirror-scrollbar
+{
+}
+
+.side-fieldset
+{
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: table-column;
+}
+
+
+    .side-fieldset legend
+    {
+        font-weight: bold;
+        font-size: 14px;
+        width: auto;
+        padding: 0 5px 0px 5px;
+        border: 0px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+
+    .side-fieldset label
+    {
+        float: left;
+        width: 100px;
+        font-weight: bold;
+    }
+
+    .side-fieldset div:after
+    {
+        clear: both;
+        content: ".";
+        height: 0px;
+        visibility: hidden;
+        display: block;
+    }
+
+.dragging
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.modal
+{
+    /* width: 600px !important; */
+}
+
+
+.bold
+{
+    font-weight: bold;
+}
+
+.fullwidth
+{
+    width: 100%;
+}
+
+.text-input-error-message
+{
+    color: darkRed;
+}
+
+.hide
+{
+    display: none;
+}
+
+
+ul.dynatree-container li
+{
+}
+
+/* NZ Web Hosting - www.nzwhost.com 
+ * Fieldset Alternative Demo
+*/
+
+.parameter-settings .form-inline input[type=checkbox]
+{
+    margin-right: 10px;
+}
+.parameter-settings .form-inline .input-xxlarge
+{
+    width: 400px
+}
+
+.form-inline label
+{
+    font-size: 12px;
+}
+
+.fieldset
+{
+    border: solid 1px #ddd;
+    position: relative;
+    margin: 10px 0 20px;
+}
+
+.fieldset-legend
+{
+    border: solid 0px #ddd;
+    left: 0.5em;
+    top: -0.6em;
+    position: absolute;
+    background: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 0.25em 0 0.25em;
+}
+
+.fieldset-wrapper .fieldset-content
+{
+    padding: 4px;
+    margin: 10px 10px 10px 10px;
+}
+
+.fieldset-content label
+{
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.fieldset-content input, .form-inline input, .form-inline textarea, .form-inline select
+{
+    margin-left: 10px;
+}
+
+.settings-modal h4
+{
+    font-size: 14px;
+}
+
+.modal-header
+{
+    background-color: whiteSmoke;
+}
+
+.settings-row
+{
+    margin-left: 15px;
+}
+
+.modal label
+{
+    min-width: 0;
+}
+
+    .modal label span
+    {
+        display: inline-block;
+        min-width: 150px;
+    }
+
+.settings-modal label input[type="text"]
+{
+    width: 400px;
+}
+
+.modal table
+{
+    max-width: 700px;
+    margin: 15px 0 15px 15px;
+}
+
+
+.module-title
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.module-description
+{
+    margin: 5px 0;
+    white-space: normal;
+}
+
+section h4
+{
+    margin-bottom: 10px;
+}
+
+td.module-enabled
+{
+    width: 1px;
+    white-space: nowrap;
+}
+
+td span
+{
+    margin-left: 5px;
+}
+
+.module-enabled input
+{
+    min-height: 18px;
+    margin-bottom: 5px;
+}
+
+.table td
+{
+    vertical-align: middle;
+}
+
+#file-system-allowed-directories td, #file-system-allowed-directories th
+{
+    text-align: left;
+}
+
+#parameter-builder td, #parameter-builder th
+{
+    text-align: left;
+}
+
+.parameters-builder td input
+{
+    font-size: 12px;
+    margin: 0px;
+}
+
+.parameters-builder ul.dropdown-menu
+{
+    min-width: 100%;
+}
+
+.script-summary-label
+{
+    min-width: 80px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+h5
+{
+    font-size: 15px;
+}
+
+.input-append,
+.input-prepend a
+{
+    margin-bottom: 0px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.modal
+{
+    /*max-height: 650px !important; */
+}
+
+.modal-body h4
+{
+    margin-bottom: 10px;
+}
+
+.run-script-modal h4
+{
+    font-size: 16px;
+}
+
+.run-script-file-list td
+{
+    white-space: nowrap;
+}
+
+.saved-script-param
+{
+    
+}
+
+.settings-row.has-error input, .settings-row.has-error select, .settings-row.has-error textarea,
+.settings-row.has-error label
+{
+    color: #B94A48;
+    border-color: #B94A48;
+}
+
+.settings-row select
+{
+    font-size: 12px;
+    padding: 3px 3px;
+    margin-bottom: 5px;
+}
+
+.run-script-results-section .filelist
+{
+    height: 100px;
+    width: 600px;
+    border: 1px solid;
+}
+
+.run-script-parameters .control-group.has-error input, .run-script-parameters .control-group.has-error select[name^="param"],
+.run-script-parameters .control-group.has-error textarea, .run-script-parameters .control-group.has-error label
+{
+    color: #B94A48;
+    border-color: #B94A48;
+}
+
+.run-script-parameters .controls .parameter
+{
+    float: left;
+}
+.run-script-parameters .control-label
+{
+    width: 150px;
+    font-size: 12px;
+}
+
+.run-script-parameters .parameter-error
+{
+    margin-left: 160px;
+    clear: both;
+    display: none
+}
+
+.run-script-parameters .filelist
+{
+    height: 100px
+}
+
+.run-script-parameters .control-group.error .parameter-error
+{
+    display: block
+}
+
+.run-script-parameters .parameter .filelist
+{
+    border: 1px solid;
+}
+.settings-row label, input, button, select, textarea, td
+{
+    font-size: 12px;
+}
+
+#file-system-allowed-directories
+{
+    max-height: 200px;
+}
+
+    #file-system-allowed-directories select
+    {
+        margin-bottom: 0px;
+    }
+
+.settings-row .error-text
+{
+    display: none;
+}
+
+.settings-row.has-error .error-text
+{
+    color: #B94A48;
+    display: block;
+}
+
+
+.modal-backdrop, .modal-backdrop.fade.in
+{
+    -moz-opacity: 0.1 !important;
+    opacity: 0.1 !important;
+    filter: alpha(opacity=10) !important;
+}
+
+form div.error
+{
+    color: #B94A48;
+}
+
+.input-append.color .add-on i, .input-prepend.color .add-on i
+{
+    /* width: 32px !important; */
+}
+
+.form-horizontal .control-group
+{
+    margin-bottom: 5px;
+}
+
+.form-horizontal .control-label
+{
+    /*width: 80px; */
+    font-weight: bold;
+}
+
+.form-horizontal .controls
+{
+    margin-left: 160px;
+}
+
+.form-horizontal div.error
+{
+    /* background-color: #B94A48; */
+    /*margin-left: 160px; */
+}
+
+.colorpicker
+{
+    z-index: 1100;
+}
+
+.accordion-heading .accordion-toggle
+{
+    font-size: 15px;
+    display: block;
+    padding: 1px 4px;
+}
+
+.control-group[param-type="fileSystem.multiple"] .help-inline
+{
+    vertical-align: top;
+}
+
+#files-table thead td
+{
+    font-weight: bold;
+}
+
+#files-table td.action
+{
+    width: 8%;
+}
+
+#files-table td.filename
+{
+    width: 25%;
+}
+
+#files-table td.last-modified
+{
+    width: 15%;
+}
+
+#files-table td.path
+{
+    width: 55%;
+}
+
+input.active
+{
+    display: inherit;
+}
+
+input.hidden
+{
+    display: none;
+}
+
+.text-input-modal, .alert-modal
+{
+    z-index: 1060;
+}
+
+.accordion form
+{
+    margin: 0;
+}
+
+#files-table ul.nav
+{
+    margin-bottom: 0px;
+}
+
+#files-table
+{
+    margin-bottom: 60px;
+}
+
+.file-list ul.nav, .checkboxlist ul.nav
+{
+    display: inline;
+}
+
+.file-list li.dropdown, .checkboxlist li.dropdown
+{
+    display: inline;
+}
+
+.file-list ul.nav li > a, .checkboxlist ul.nav li > a
+{
+    display: inline;
+}
+
+.offscreen
+{
+    position: fixed !important;
+    top: -9999px !important;
+}
+
+/* SIGNIN FORM */
+.signin-form, .firstime-form
+{
+    overflow: hidden;
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.firstime-form
+{
+    width: 700px;
+}
+    .firstime-form .help
+    {
+        font-size: 14px;
+    }
+    .firstime-form .license
+    {
+        width: 400px;
+        height: 300px;
+        overflow: auto;
+        border: 1px solid #ccc;
+    }
+
+    .firstime-form .control-group .controls
+    {
+        margin-left: 180px;
+    }
+    .firstime-form .has-error input, .firstime-form .has-error select, .firstime-form .has-error textarea,
+    .firstime-form .has-error label
+    {
+        color: #B94A48;
+        border-color: #B94A48;
+    }
+
+    .firstime-form .license pre
+    {
+        -ms-word-break: normal;
+        word-break: normal;
+        padding: 0;
+        margin: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+    }
+
+    .firstime-form label.error
+    {
+        color: #B94A48;
+    }
+
+@media (max-width: 979px)
+{
+    .signin .navbar-fixed-top .navbar-inner, .signin .navbar-fixed-bottom .navbar-inner
+    {
+        padding: 0px;
+    }
+
+    .sigin .signin-form, .firstime-form
+    {
+        padding-top: 0px !important;
+    }
+}
+
+.checkboxlist label
+{
+    display: inline;
+}
+
+.checkboxlist .radio input[type="radio"], .checkboxlist .checkbox input[type="checkbox"]
+{
+    float: none;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.checkboxlist ol > li
+{
+    margin-left: 10px;
+}
+
+.btn-toolbar
+{
+    margin-bottom: 0px;
+}
+
+.summary-builder-modal .code
+{
+    height: 150px !important;
+    position: relative;
+}
+
+.parameters-builder-modal .code
+{
+    height: 200px !important;
+    position: relative;
+}
+
+.parameters-builder-modal
+{
+    min-height: 500px;
+    max-height: 700px !important;
+}
+
+    .parameters-builder-modal .modal-body
+    {
+        min-height: 500px;
+        max-height: 550px;
+    }
+
+tr.hidden
+{
+    display: none;
+}
+
+tr.temp-hidden
+{
+    display: none;
+}
+
+table.parameters-builder .fieldset-legend
+{
+    font-size: 12px;
+    top: -0.8em;
+}
+
+
+table.parameters-builder .fieldset-wrapper
+{
+    display: inline-block;
+    margin: 0 0px 10px;
+}
+
+table.parameters-builder
+{
+    border: 1px solid #DDD;
+    width: 95%;
+}
+
+    table.parameters-builder tr[param-type]
+    {
+        border-top: 1px solid #DDD;
+    }
+
+    table.parameters-builder label
+    {
+        min-width: 0;
+        margin-right: 5px;
+    }
+
+    table.parameters-builder input[type="text"]
+    {
+        margin-left: 5px;
+    }
+
+    table.parameters-builder .fieldset-wrapper .fieldset-content
+    { 
+        margin-bottom: 0px;
+    }
+
+    table.parameters-builder .fieldset
+    {
+        margin: 0;
+    }
+
+    table.parameters-builder td:last-child, table.parameters-builder th:last-child
+    {
+        width: 100px;
+    }
+
+    table.parameters-builder td:nth-child(2)
+    {
+        width: 120px;
+    }
+
+
+.dropdown-menu
+{
+    min-width: 220px;
+}
+
+
+.dropdown-menu li
+{
+    text-align: left;
+}
+
+.dropdown-menu > li > a
+{
+    white-space: normal;
+}
+   
+.editor
+{
+    width: 100%;
+    position: relative !important;
+}
+
+input.error
+{
+    background-color: red;
+}
+
+table.marketplace-item-info
+{
+    margin: 0;
+}
+
+    table.marketplace-item-info td:nth-child(1)
+    {
+        font-weight: bold;
+        width: 150px;
+    }
+
+.btn-mini
+{
+    font-size: 12px;
+}
+
+.btn[action=run]
+{
+    font-weight: bold;
+}
+
+.install-status
+{
+    font-weight: bold;
+    color: red;
+    font-size: 14px;
+}
+
+.modal-footer
+{
+    padding: 5px 15px 5px;
+}
+
+.modal-body
+{
+    /*max-height: 500px !important; */
+    overflow: auto !important;
+}
+
+.navbar-inner
+{
+    border-radius: 0px;
+    padding-left: 2px !important
+}
+
+    .navbar-inner .pull-right
+    {
+        padding-top: 5px;
+    }
+
+@media (max-width: 480px)
+{
+    .form-horizontal .control-label
+    {
+        float: left;
+    }
+}
+
+#main
+{
+    position: absolute;
+    bottom: 0px;
+    top: 41px;
+    width: 100%;
+    min-width: 770px
+}
+
+@media (max-width: 979px)
+{
+    .navbar-fixed-top, .navbar-fixed-bottom
+    {
+        position: fixed;
+    }
+}
+
+#wrap
+{
+    height: 100%;
+}
+
+/* Splitter */
+.splitter
+{
+    height-x: 400px;
+    height-x: 50%;
+    height: calc(100% - 4px);
+    height: -moz-calc(100% - 4px);
+    height: -webkit-calc(100% - 4px);
+    margin: 0;
+    border: 1px solid #bdb;
+    background: #f8fff8;
+}
+
+.ui-state-default
+{
+    background-color: #aca;
+}
+
+.ui-state-hover
+{
+    background-color: #bdb;
+}
+
+.ui-state-highlight
+{
+    background-color: #add;
+}
+
+.ui-state-error
+{
+    background-color: #eaa;
+}
+
+.splitter-pane
+{
+    overflow: auto;
+}
+
+.splitter-bar-vertical
+{
+    width: 5px;
+    height-x: 100% !important;
+    background-image: url(../img/splitter/v-grabber.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.splitter-bar-vertical-docked
+{
+    width: 20px;
+    background-image: url(../img/splitter/vdockbar-trans.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.splitter-bar.ui-state-highlight
+{
+    opacity: 0.7;
+}
+
+.splitter-iframe-hide
+{
+    visibility: hidden;
+}
+
+/* Widgets */
+
+.widget-controls
+{
+    width: auto;
+    float: right;
+    top: 0px;
+    padding: 0px 2px 0 0;
+    margin: 0;
+}
+
+    .widget-controls .button
+    {
+        background: #E5E5E5;
+        background: -moz-linear-gradient(top, white 0%, #E5E5E5 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,white), color-stop(100%,#E5E5E5));
+        background: -webkit-linear-gradient(top, white 0%,#E5E5E5 100%);
+        background: -o-linear-gradient(top, white 0%,#E5E5E5 100%);
+        background: -ms-linear-gradient(top, white 0%,#E5E5E5 100%);
+        background: linear-gradient(to bottom, white 0%,#E5E5E5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+        border: 1px solid #C2C2C2;
+    }
+
+    .widget-controls .button
+    {
+        width: 18px;
+        height: 18px;
+        float: left;
+        -moz-border-radius: 3px;
+        -khtml-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        position: relative;
+        /*margin: 0 5px 0px 0; */
+        font-size: 13px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+        .widget-controls .button i
+        {
+            margin: 0 0 0 4px;
+            left: 50%;
+            top: 50%;
+            width: 14px;
+            height: 14px;
+            line-height: 14px;
+            vertical-align: text-top;
+        }
+
+.widgets .widget-title
+{
+    border: 1px solid black;
+}
+
+.widgets *
+{
+    font-size: 12px;
+}
+
+.widget-placeholder
+{
+    background-color: red;
+    height: 20px;
+    line-height: 15px;
+}
+
+.widgets .accordion-body
+{
+    background-color: white;
+}
+
+.widgets .accordion-heading
+{
+    background-color: lightgray;
+}
+
+.widgets .widget .accordion-inner
+{
+    padding: 0px;
+}
+/* Menu Bar */
+#menubar a.disabled
+{
+    cursor: default;
+    background-image: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Components */
+
+
+.directorylist span.icon.dir,.repositoryfolderlist span.icon.dir
+{
+    background-position: 0px -16px;
+}
+
+.directorylist span.icon, .repositoryfolderlist span.icon
+{
+    background-image: url("../nimblescript/lib/dynatree/skins/skin-vista/icons.gif");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+}
+
+/* FolderBrowser */
+span.dynatree-selected a
+{
+    font-style: normal !important;
+}
+
+.folder-tree > div.tree
+{
+    height: 100%
+}
+
+/* Settings */
+
+.settings
+{
+    height: 100%;
+}
+
+    .settings > div
+    {
+        float: left;
+    }
+
+    .settings .section-tree
+    {
+        width: 250px;
+        border: 1px solid;
+        height: calc(100% - 8px);
+        height: -moz-calc(100% - 8px);
+        height: -webkit-calc(100% - 8px);
+        padding-bottom: 6px;
+    }
+
+    .settings .tab-content
+    {
+        width: 505px;
+    }
+
+    .settings .tab-pane
+    {
+        height: 476px;
+        overflow: auto;
+        border: none;
+    }
+
+/* Documents*/
+.nav-tabs > li > a > i.closedoc
+{
+    cursor: pointer;
+}
+
+/* Main View*/
+/* TODO: This just plain ugly, fix with JS, or anything that is less of a kludge */
+.documents .tab-content
+{
+    height: calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+}
+
+.documents .tab-pane
+{
+    height: calc(100% - 22px);
+    height: -moz-calc(100% - 22px);
+    height: -webkit-calc(100% - 22px);
+}
+
+
+.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover
+{
+    font-size: 12px;
+}
+
+
+/* DataTable */
+.datatable {
+    height: 100%;
+    
+}
+
+.datatable a
+{
+    font-size: 11px !important;
+}
+
+/* FileList */
+.filelist
+{
+    height: 100%
+}
+
+.reorder-helper
+{
+    font-size: 14px;
+    font-weight: bold;
+    width: 200px;
+}
+
+/* Modal Prompts*/
+.modal.dialog .modal-body .text
+{
+    font-size: 14px;
+}
+
+.modal.dialog .modal-body .subtext
+{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* Tree */
+.tree
+{
+    
+}
+
+.tree ul.dynatree-container a
+{
+    font-size: 12px;
+}
+
+/* Loading messages */
+.please-wait
+{
+    font-size: 30px !important;
+    padding: 10px !important;
+    font-family: arial !important;
+    margin: 5px !important
+}
+
+label.error
+{
+    color: red;
+}
+
+label.error input, label.error textarea
+{
+    border-color: red;
+}
+
+.parameter-settings .param-summary
+{ 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.marketplace-install form
+{
+    margin: 0;
+}
+
+.marketplace-install .error
+{
+    font-size: 14px;
+    color: red;
+}
+
+.marketplace-install table.required-modules
+{
+    border: 1px solid #DDD;
+    width: 95%;
+}
+
+.marketplace-install table label
+{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.marketplace-install td label span
+{
+    min-width: 0;
+    font-size: 12px;
+}
+
+.marketplace-install td span
+{
+    margin-left: 0
+}
+
+.marketplace-installer 
+{
+    height: 100%
+}
+
+.marketplace-installer textarea
+{
+    height: 95%;
+    width: 95%;
+    resize: none
+}
+.marketplace-install table th
+{
+    text-align: left;
+}
+
+.marketplace-install table thead th:nth-child(2)
+{
+    width: 90px;
+}
+.marketplace-install table thead th:last-child
+{
+    width: 250px;
+}
+.marketplace-install .status
+{
+    font-weight: bold;
+}
+.marketplace-install .status-installed 
+{
+    color: green;
+}
+
+.marketplace-install .status-not-installed 
+{
+    color: blue;
+}
+
+.marketplace-install .status-not-enabled
+{
+    color: orange;
+}
+
+.marketplace-install .status-invalid
+{
+    color: red
+}
+
+.marketplace-install .module-not-supported
+{
+    font-size: 16px;
+    color: red;
+}
+
+.marketplace-publisher
+{
+    height: 100%
+}
+
+.marketplace-publisher textarea
+{
+    height: 95%;
+    width: 95%;
+    resize: none
+}
+
+textarea[readonly],textarea[disabled]
+{
+    background-color: white;
+}
+
+textarea[readonly]::-ms-value
+{
+    color: black !important
+}
+.textarea[disabled]::-ms-value
+{
+    color: black !important;
+}
+
+.folderbrowser
+{
+    height: 100%
+}

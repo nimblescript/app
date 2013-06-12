@@ -1,0 +1,14 @@
+﻿.script-summary-builder .code
+{
+    height: 200px;
+}
+
+.script-summary-builder .code .editor
+{
+    height: 100%
+}
+
+.script-summary-builder .settings-row label > span
+{
+    vertical-align: top
+}

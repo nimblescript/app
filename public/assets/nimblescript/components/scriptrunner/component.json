@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.scriptrunner",
+	"title": "Script Runner",
+	"main": "ScriptRunner"
+}

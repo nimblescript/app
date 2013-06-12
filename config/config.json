@@ -1,0 +1,23 @@
+{
+  "version": "0.0.3",
+  "repository-library": {
+    "module": "nimblescript-repository-library"
+  },
+  "business-library": {
+    "module": "nimblescript-business-library"
+  },
+  "webServer": {
+    "port": 3000,
+    "session_store": {
+      "enabled": false,
+      "module": "connect-mongo",
+      "options": {
+        "url": "mongodb://localhost/nimblescriptapp"
+      }
+    }
+  },
+  "debug": {
+	"disableReqAuth": true
+  }
+
+}

@@ -1,0 +1,7 @@
+{ 	"id": "fs",
+	"title": "File System read/write",
+	"version": "1.0.0",
+	"description": "Read/write files on local system.  Access restricted to user specified directories.",
+	"main": "fs/fs.js",
+	"init": true
+}

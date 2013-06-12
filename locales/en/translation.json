@@ -1,0 +1,279 @@
+{
+	"user":
+	{
+		"already_init": "First time initialization already performed",
+		"invalid_password": "Invalid password",
+		"firsttime": 
+		{
+			"help": "Hello first time user - please enter a new password and agree to the license to finish nimbleScript setup",
+			"enter_password": "Enter password",
+			"confirm_password": "Confirm password",
+			"license": "License",
+			"agree_to_license": "Agree to license",
+			"submit": "Go!"
+		}	
+	},
+	"settings":
+	{
+		"setting_names":
+		{
+			"password": "Password"	
+		},
+		"errors":
+		{
+			"invalid_password": "Invalid password specified"
+		}
+	},
+	"menu":
+	{
+		"file":
+		{
+			"label": "File",
+			"save": "Save",
+			"saveas": "Save As...",
+			"close": "Close",
+			"signout": "Signout",
+			"shutdown": "Shutdown",
+			"settings": "Settings..."
+		},
+		"marketplace":
+		{
+			"label": "Marketplace",
+			"browse": "Browse...",
+			"install": "Quick Install..."
+		},
+		"help":
+		{
+			"label": "Help",
+			"about": "About...",
+			"documentation": "Documentation",
+			"version_check": "Check for latest version",
+			"home_page": "Home page"
+		},
+		"view":
+		{
+			"label": "View",
+			"widgets": 
+			{
+				"label": "Widgets",
+				"none": "No widgets loaded"
+			},
+			"documents": 
+			{
+				"label": "Documents",
+				"none": "No open documents"
+			},
+			"startpage": "Start Page"
+		},
+		"edit":
+		{
+			"label": "Edit",
+			"cut": "Cut",
+			"copy": "Copy",
+			"paste": "Paste",
+			"redo": "Redo",
+			"undo": "Undo"
+		}
+	},
+	"misc":
+	{
+		"love_nimblescript": "nimbleScript? Please",
+		"nimblescript": "nimbleScript",
+		"support": "Support Us",
+		"exit_dirty_documents": "You have unsaved documents.",
+		"shutdown_title": "Shutdown...",
+		"shutdown_text": "The nimbleScript service has been shutdown.  You can safely close this browser tab.",
+		"please_wait": "Please wait",
+		"yes": "Yes",
+		"no": "No",
+		"cancel": "Cancel"
+	},
+	"system":
+	{
+		"not_exist": "The item does not exist",
+		"access_denied": "Access denied",
+		"already_exists": "Already exists",
+		"invalid_data": "Invalid data",
+		"error": "Error",
+		"not_directory": "Not a valid directory",
+		"unknown_error": "Unknown error",
+		"ajax_error": "Ajax Error",
+		"fs": 
+		{
+			"EPERM": "You do not have permission to that item"
+		}
+	},
+	"repository":
+	{
+		"not_exist": "The item does not exist",
+		"access_denied": "Access denied",
+		"already_exists": "Already exists",
+		"error": "Unknown Error"
+	},
+	"components":
+	{
+		"datatable": 
+		{
+			"no_records": "No records"
+		},
+		"directorylist":
+		{
+			"no_records": "This folder is empty"
+		},
+		"repositoryfolderlist":
+		{
+			"no_records": "This folder is empty"
+		},
+		"publishscript":
+		{
+			"publish": "Publish",
+			"cancel": "Cancel",
+			"modal_title": "Publish Script",
+			"close": "Close",
+			"help": "Help"
+		},
+		"scriptsummary":
+		{
+			"scripterror": "Script Error"
+		}
+	},
+	"script":
+	{
+		"run_error": "Error running script, ensure nimbleScript is running.",
+		"parameter_errors": "Parameter Errors",
+		"error": "Error",
+		"running": "Running",
+		"script_error": "Script Error",
+		"invalid_return_data": "Invalid return data from the script",
+		"unknown_runresult": "Did not receive expected runresult from the script.  Ask the author to fix it!",
+		"success": "Success",
+		"data_error": "Data Error",
+		"timed_out": "Timed Out",
+		"run_error": "Run Error",
+		"run_parameter_error": "The script has indicated an error with the parameter values",
+		"run_execution_error": "The script has indicated an error in trying to execute.",
+		"save_before_close": "This script has been modified - do you want to save it?",
+		"must_be_saved": "This script must be saved first - continue?",
+		"parameters_builder":
+		{
+			"default_parameter_name": "A parameter",
+			"settings": "Settings",
+			"new": "New",
+			"type": "Type",
+			"required": "Required",
+			"id": "ID",
+			"name": "Name"
+		}
+	},
+	"marketplace":
+	{
+		"authorize_page": "You will now be taken to the marketplace site to authorise this application.",
+		"authorize_title": "Marketplace Authorization",
+		"authorization_error": "Unable to complete marketplace authorization",
+		"script_installed_text": "Run downloaded script?",
+		"install_result_title": "Install from Marketplace...",
+		"module_installed_text": "Module installed",
+		"search": "Search",
+		"install": "Install",
+		"enable": "Enable",
+		"unknown_error": "Unknown error with marketplace",
+		"invalid_publisher_id": "Invalid publisher id",
+		"manage_account": "Manage publishers and items on the marketplace",
+		"publish":
+		{
+			"publishing_existing": "A published script has been automatically selected using marketplace details in getSummary()",
+			"publishing_script": "You are publishing new release of <a href='#'>__name__<a/>",
+			"publish_as": "Publish as:",
+			"existing_release": "Script:",
+			"new_script": "Create new script in marketplace",
+			"summary_heading": "Script Summary",
+			"summary_heading_url": "$t(marketplace.publish.summary_heading) - <a target='_blank' href='__url__'>View on marketplace</a>",
+			"release_heading": "New Release Details",
+			"version": "Version:",
+			"release_number": "Release:",
+			"name": "Name:",
+			"status": "Status:",
+			"latest_release": "Latest Published Release:",
+			"publish": "Publish",
+			"help_title": "Quick Publish Help",
+			"help_content": [
+				"<p>You can quickly publish a new release for a script that already exists on the marketplace.</p>",
+				"<p>Make sure you have a marketplace: { id: 'XXX' } setting in getSummary() to speed up publishing updates in the future.</p>",
+				"<h4>Steps to script publishing</h4>",
+				"<ol>",
+				"<li>Setup a publisher on the marketplace</li>",
+				"<li>Create a new Script Item</li>",
+				"<li>return 'marketplace: { id: 'XXXX}' in getSummary, where XXXX is the Item Id()</li>",
+				"<li>Update version and release in getSummary() for each release</li>",
+				"<li>Use this form to publish releases</li>",
+				"</ol>"
+			],
+			"live_from": "Live from:",
+			"license": "License:",
+			"summary": "Summary:",
+			"release_notes": "Release Notes:",
+			"active": "Active",
+			"inactive": "Inactive",
+			"view_on_marketplace": "<a href='__url__'>View on marketplace</a>",
+			"no_item": "No script selected",
+			"summary_required": "Summary required - must start with alphanumeric character",
+			"release_notes_required": "Release Notes required",
+			"validation_error": "Submitted release failed validation",
+			"script_published": "Script release published - <a target='_blank' href='__url__'>View admin page</a>",
+			"fields":
+			{
+				"release_number": 
+				{
+					"name": "Release Number",
+					"errors": 
+					{
+						"existing": "Existing release number, suggest using __hint__"
+					}
+				}
+			},
+			"publisher":
+			{
+				"title": "Publishing",
+				"preparing_to_publish": "Preparing to publish",
+				"unkown_error": "Unknown error",
+				"finished": "Finished!",
+				"success": "Success",
+				"failed": "Failed",
+				"publishing_script": "Publishing script",
+				"item_summary": "v__version__ (r__release__) of '__name__'"
+			}
+		},
+		"item_detail":
+		{
+			"required_modules": "Required Modules",
+			"manage_modules": "Manage Modules",
+			"installed": "Installed",
+			"not_installed": "Not installed",
+			"not_enabled": "Not enabled",
+			"not_supported": "Your platform is not supported",
+			"invalid": "Invalid",
+			"select_platform": "Select platform",
+			"module": "Module",
+			"status": "Status",
+			"action": "Action",
+			"install": "Install"
+		},
+		"installer":
+		{
+			"title": "Installing...",
+			"preparing_to_action": "Preparing to action",
+			"module": "Module",
+			"script": "Script",
+			"installing_script": "Installing script",
+			"installing_module": "Installing module",
+			"enabling_module": "Enabling module",
+			"install_failed": "Install failed",
+			"install_success": "Installed",
+			"enabled": "Enabled",
+			"finished": "Finished!",
+			"unknown_error": "Unknown error"
+
+		}
+	}
+}
+ 

@@ -1,0 +1,6 @@
+{
+	"id": "xemware.nimblescript.widget.scriptrunhistory",
+	"title": "Script Run History",
+	"main": "ScriptRunHistory",
+	"description": "View and re-run previously run scripts"
+}

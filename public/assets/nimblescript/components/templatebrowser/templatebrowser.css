@@ -1,0 +1,60 @@
+﻿/* TODO: Fix this kludge*/
+
+.template-browser, .template-browser-body
+{
+    height: 100%;
+}
+
+.template-browser
+{
+    min-width: 500px;
+}
+.template-browser .row-fluid
+{
+    height: calc(100% - 60px);
+    height: -moz-calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+}
+
+.template-browser .row-fluid > div
+{
+    border: 1px solid black;
+    height: 100%;
+}
+
+.template-browser div.sections
+{
+    padding-bottom: 8px;
+}
+
+.template-browser .template-summary
+{
+    padding: 10px
+}
+
+.summary-label
+{
+    font-weight: bold;
+}
+
+.section-description
+{
+    word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+.template-browser .templates .ui-selectable li
+{
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.template-browser .templates .ui-selectable li.ui-selected
+{
+    background-color: lightgray
+}
+
+.template-browser .templates .ui-selectable 
+{
+    margin: 2px 2px;
+}

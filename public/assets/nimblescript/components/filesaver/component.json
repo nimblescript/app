@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.filesaver",
+	"title": "File Saver",
+	"main": "FileSaver"
+}

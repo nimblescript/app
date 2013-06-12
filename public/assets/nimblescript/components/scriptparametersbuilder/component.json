@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.scriptparametersbuilder",
+	"title": "Script Parameters Builder",
+	"main": "ScriptParametersBuilder"
+}

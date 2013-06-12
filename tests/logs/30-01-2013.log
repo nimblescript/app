@@ -1,0 +1,337 @@
+[2013-01-30 09:42:04.269] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:42:04.287] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:42:04.319] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:42:04.327] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:42:04.327] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:42:04.364] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:42:04.364] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:42:04.366] [DEBUG] [BIZ_LIB] New OutgoingEmail instance
+[2013-01-30 09:42:04.366] [DEBUG] [BIZ_LIB] Loaded object outgoing_email
+[2013-01-30 09:42:04.367] [DEBUG] [BIZ_LIB] New ProcessorEventQueue instance
+[2013-01-30 09:42:04.367] [DEBUG] [BIZ_LIB] Loaded object processor_event_queue
+[2013-01-30 09:42:04.631] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 09:42:04.829] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 09:42:04.834] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 09:42:04.838] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 09:42:04.840] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 09:42:04.841] [DEBUG] [DATA_LIB] Loaded model request
+[2013-01-30 09:42:04.842] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 09:42:04.842] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 09:42:04.844] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 09:42:04.845] [DEBUG] [DATA_LIB] 	options: {"url":"mongodb://localhost/snackle"}
+[2013-01-30 09:42:04.846] [DEBUG] [DATA_LIB] Mongoose connect: mongodb://localhost/snackle
+[2013-01-30 09:43:26.791] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:43:26.808] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:43:26.841] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:43:26.848] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:43:26.848] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:43:26.885] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:43:26.886] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:43:26.887] [DEBUG] [BIZ_LIB] New OutgoingEmail instance
+[2013-01-30 09:43:26.888] [DEBUG] [BIZ_LIB] Loaded object outgoing_email
+[2013-01-30 09:43:26.890] [DEBUG] [BIZ_LIB] New ProcessorEventQueue instance
+[2013-01-30 09:43:26.890] [DEBUG] [BIZ_LIB] Loaded object processor_event_queue
+[2013-01-30 09:43:27.151] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 09:43:27.344] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 09:43:27.348] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 09:43:27.353] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 09:43:27.354] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 09:43:27.355] [DEBUG] [DATA_LIB] Loaded model request
+[2013-01-30 09:43:27.356] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 09:43:27.356] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 09:43:27.358] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 09:43:27.359] [DEBUG] [DATA_LIB] 	options: {"url":"mongodb://localhost/snackle"}
+[2013-01-30 09:43:27.361] [DEBUG] [DATA_LIB] Mongoose connect: mongodb://localhost/snackle
+[2013-01-30 09:43:27.371] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:43:45.877] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:43:45.893] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:43:45.925] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:43:45.932] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:43:45.933] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:43:45.969] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:43:45.969] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:44:36.456] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:44:36.473] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:44:36.506] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:44:36.513] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:44:36.514] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:44:36.550] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:44:36.551] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:45:30.091] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:45:30.108] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:45:30.140] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:45:30.147] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:47:04.542] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:47:04.559] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:48:45.556] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:48:45.573] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:48:45.605] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:48:45.612] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:48:45.613] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:48:45.649] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:48:45.649] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:49:27.020] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:49:27.037] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:49:27.070] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:49:27.077] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:49:27.077] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:49:27.114] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:49:27.114] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:49:27.116] [DEBUG] [BIZ_LIB] New OutgoingEmail instance
+[2013-01-30 09:49:27.116] [DEBUG] [BIZ_LIB] Loaded object outgoing_email
+[2013-01-30 09:49:27.119] [DEBUG] [BIZ_LIB] New ProcessorEventQueue instance
+[2013-01-30 09:49:27.119] [DEBUG] [BIZ_LIB] Loaded object processor_event_queue
+[2013-01-30 09:49:27.388] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 09:49:27.585] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 09:49:27.589] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 09:49:27.594] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 09:50:03.224] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:50:03.242] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:50:03.274] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:50:03.282] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:50:03.282] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:50:03.321] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:50:03.321] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:50:03.323] [DEBUG] [BIZ_LIB] New OutgoingEmail instance
+[2013-01-30 09:51:13.692] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 09:51:13.712] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 09:51:13.745] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 09:51:13.753] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 09:51:13.753] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 09:51:13.790] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:51:13.790] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 09:51:13.792] [DEBUG] [BIZ_LIB] New OutgoingEmail instance
+[2013-01-30 09:51:13.792] [DEBUG] [BIZ_LIB] Loaded object outgoing_email
+[2013-01-30 09:51:13.795] [DEBUG] [BIZ_LIB] New ProcessorEventQueue instance
+[2013-01-30 09:51:13.795] [DEBUG] [BIZ_LIB] Loaded object processor_event_queue
+[2013-01-30 09:51:14.069] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 09:51:14.284] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 09:51:14.287] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 09:51:14.292] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 09:51:14.294] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 09:51:14.295] [DEBUG] [DATA_LIB] Loaded model request
+[2013-01-30 09:51:14.296] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 09:51:14.296] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 09:51:14.298] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 09:51:14.299] [DEBUG] [DATA_LIB] 	options: {"url":"mongodb://localhost/snackle"}
+[2013-01-30 09:51:14.301] [DEBUG] [DATA_LIB] Mongoose connect: mongodb://localhost/snackle
+[2013-01-30 09:51:14.311] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 09:51:14.320] [DEBUG] [BIZ_LIB] New ProcessorEventQueue instance
+[2013-01-30 09:51:14.321] [DEBUG] [BIZ_LIB] Saving processor event
+[2013-01-30 09:51:14.324] [DEBUG] [BIZ_LIB] Processor event saved
+[2013-01-30 10:24:44.479] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 10:24:44.496] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 10:24:44.749] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 10:24:44.941] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 10:24:44.952] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 10:24:44.954] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 10:24:44.957] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 10:24:44.958] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 10:24:44.959] [DEBUG] [DATA_LIB] Loaded model request
+[2013-01-30 10:24:44.960] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 10:24:44.960] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 10:24:44.997] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 10:24:45.007] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 10:24:45.007] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 10:24:45.009] [DEBUG] [BIZ_LIB] New Campaign instance
+[2013-01-30 10:24:45.009] [DEBUG] [BIZ_LIB] Loaded object campaign
+[2013-01-30 10:24:45.052] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 10:24:45.052] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 10:24:45.054] [DEBUG] [BIZ_LIB] New OutgoingEmail instance
+[2013-01-30 10:24:45.054] [DEBUG] [BIZ_LIB] Loaded object outgoing_email
+[2013-01-30 10:24:45.057] [DEBUG] [BIZ_LIB] New ProcessorEventQueue instance
+[2013-01-30 10:24:45.057] [DEBUG] [BIZ_LIB] Loaded object processor_event_queue
+[2013-01-30 10:24:45.059] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 10:24:45.060] [DEBUG] [DATA_LIB] 	options: {"url":"mongodb://localhost/snackle"}
+[2013-01-30 10:24:45.061] [DEBUG] [DATA_LIB] Mongoose connect: mongodb://localhost/snackle
+[2013-01-30 10:24:45.071] [DEBUG] [BIZ_LIB] New Campaign instance
+[2013-01-30 11:23:51.357] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:23:51.374] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:23:51.633] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:23:51.830] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:23:51.841] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:23:51.842] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:23:51.846] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:23:51.848] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:42:58.568] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:42:58.585] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:42:58.838] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:42:59.034] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:42:59.045] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:42:59.046] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:42:59.050] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:42:59.052] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:42:59.055] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:42:59.056] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:42:59.056] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 11:42:59.092] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 11:42:59.102] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 11:42:59.102] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 11:42:59.104] [DEBUG] [BIZ_LIB] New Campaign instance
+[2013-01-30 11:43:34.420] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:43:34.437] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:43:34.694] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:43:34.892] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:43:34.903] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:43:34.905] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:43:34.909] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:43:34.911] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:43:34.915] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:43:34.916] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:43:34.916] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 11:43:34.953] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 11:45:17.612] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:45:17.629] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:45:17.893] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:45:18.090] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:45:18.101] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:45:18.103] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:45:18.107] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:45:18.108] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:45:18.112] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:45:18.112] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:45:18.112] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 11:45:18.148] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 11:45:18.158] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 11:45:18.158] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 11:46:56.485] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:46:56.502] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:46:56.766] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:46:56.965] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:46:56.976] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:46:56.978] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:46:56.983] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:46:56.985] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:46:56.989] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:46:56.990] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:47:19.184] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:47:19.201] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:47:19.457] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:47:19.656] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:47:19.667] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:47:19.669] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:47:19.672] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:47:19.674] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:47:19.678] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:47:19.679] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:47:19.679] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 11:47:19.716] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 11:47:19.725] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 11:47:19.726] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 11:48:43.772] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:48:43.789] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:48:44.042] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:48:44.238] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:48:44.249] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:48:44.251] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:48:44.256] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:48:44.257] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:48:44.260] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:48:44.260] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:48:44.261] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 11:48:44.296] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 11:48:44.305] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 11:48:44.305] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 11:49:16.122] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:49:16.138] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:49:16.392] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:49:16.585] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:49:16.596] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:49:16.598] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:49:16.601] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:49:16.603] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:49:16.606] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:49:16.607] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:49:16.607] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 11:49:16.642] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 11:49:16.652] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 11:49:16.652] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 11:49:16.654] [DEBUG] [BIZ_LIB] New Campaign instance
+[2013-01-30 11:54:44.751] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:54:44.768] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:54:45.021] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:54:45.216] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:54:45.228] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:54:45.230] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:54:45.233] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:54:45.234] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 11:54:45.238] [DEBUG] [DATA_LIB] Loaded model workflow_template
+[2013-01-30 11:54:45.239] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:54:45.239] [DEBUG] [DATA_LIB] 	options: {}
+[2013-01-30 11:54:45.274] [DEBUG] [BIZ_LIB] Loaded object objectbase
+[2013-01-30 11:54:45.283] [DEBUG] [BIZ_LIB] New Account instance
+[2013-01-30 11:54:45.283] [DEBUG] [BIZ_LIB] Loaded object account
+[2013-01-30 11:54:45.285] [DEBUG] [BIZ_LIB] New Campaign instance
+[2013-01-30 11:54:45.285] [DEBUG] [BIZ_LIB] Loaded object campaign
+[2013-01-30 11:54:45.329] [DEBUG] [BIZ_LIB] New Event instance
+[2013-01-30 11:54:45.329] [DEBUG] [BIZ_LIB] Loaded object event
+[2013-01-30 11:54:45.331] [DEBUG] [BIZ_LIB] New OutgoingEmail instance
+[2013-01-30 11:54:45.331] [DEBUG] [BIZ_LIB] Loaded object outgoing_email
+[2013-01-30 11:54:45.334] [DEBUG] [BIZ_LIB] New ProcessorEventQueue instance
+[2013-01-30 11:54:45.334] [DEBUG] [BIZ_LIB] Loaded object processor_event_queue
+[2013-01-30 11:54:45.336] [DEBUG] [BIZ_LIB] New Workflow Template instance
+[2013-01-30 11:54:45.337] [DEBUG] [BIZ_LIB] Loaded object workflow_template
+[2013-01-30 11:54:45.340] [DEBUG] [DATA_LIB] New SnackleDataLibrary instance
+[2013-01-30 11:54:45.340] [DEBUG] [DATA_LIB] 	options: {"url":"mongodb://localhost/snackle"}
+[2013-01-30 11:54:45.341] [DEBUG] [DATA_LIB] Mongoose connect: mongodb://localhost/snackle
+[2013-01-30 11:54:45.351] [DEBUG] [BIZ_LIB] New Workflow Template instance
+[2013-01-30 11:56:36.483] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:56:36.501] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:56:36.764] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:56:36.962] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:56:36.973] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:56:36.975] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:56:36.979] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:58:02.595] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:58:02.611] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:58:02.868] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:58:03.064] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:58:03.076] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:58:03.078] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:58:03.081] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:58:33.272] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:58:33.289] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:58:33.542] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:58:33.739] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:58:33.750] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:58:33.753] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:58:33.757] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:58:47.375] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:58:47.392] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:58:47.655] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:58:47.853] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:58:47.864] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:58:47.866] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:58:47.870] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:59:19.380] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 11:59:19.397] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 11:59:19.649] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 11:59:19.845] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 11:59:19.856] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 11:59:19.858] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 11:59:19.862] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 11:59:19.863] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 12:00:35.969] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 12:00:35.986] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 12:00:36.237] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 12:00:36.436] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 12:00:36.447] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 12:00:36.449] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 12:00:36.453] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 12:00:36.454] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 12:01:22.703] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 12:01:22.721] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 12:01:22.985] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 12:01:23.185] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 12:01:23.197] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 12:01:23.199] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 12:01:23.203] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 12:01:23.205] [DEBUG] [DATA_LIB] Loaded model processor_event
+[2013-01-30 12:02:10.438] [DEBUG] [CONFIG_LIB] Loading configuration
+[2013-01-30 12:02:10.455] [DEBUG] [CONFIG_LIB] Config file path: ../config/snackle.json
+[2013-01-30 12:02:10.719] [DEBUG] [DATA_LIB] Loaded model modelbase
+[2013-01-30 12:02:10.919] [DEBUG] [DATA_LIB] Loaded model account
+[2013-01-30 12:02:10.931] [DEBUG] [DATA_LIB] Loaded model campaign
+[2013-01-30 12:02:10.934] [DEBUG] [DATA_LIB] Loaded model event
+[2013-01-30 12:02:10.938] [DEBUG] [DATA_LIB] Loaded model outgoing_email
+[2013-01-30 12:02:10.940] [DEBUG] [DATA_LIB] Loaded model processor_event

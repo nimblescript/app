@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.scriptsummarybuilder",
+	"title": "Script Summary Builder",
+	"main": "ScriptSummaryBuilder"
+}

@@ -1,0 +1,66 @@
+﻿.script-editor
+{
+    height: 100%
+}
+
+.script-editor .working-area
+{
+    height: -webkit-calc(100% - 30px);
+    height: calc(100% - 30px);
+    height: -webkit-calc(100% - 30px);
+}
+
+.script-editor .editor, .script-editor .the-editor
+{
+    height: 100%;
+    width: 100%
+}
+
+.script-editor .summary
+{
+    font-size:14px;
+    color: red;
+}
+
+
+.script-editor .working-area > div
+{
+    float: left;
+    height: 100%;
+}
+
+.script-editor .lint-section
+{
+    color: #DF382C;
+    background-color: #FADFDD;
+    border-color: #F8D0D4;
+    display: none;
+    padding: 0px 5px;
+    width: 35%
+
+}
+
+.script-editor .lint-list
+{
+    overflow: auto;
+    height: -webkit-calc(100% - 10px);
+    height: calc(100% - 10px);
+    height: -webkit-calc(100% - 10px);
+}
+
+.script-editor .ui-selectable
+{
+    margin: 0 0 10px 0
+}
+.script-editor .ui-selectable li
+{
+    list-style-type: none;
+}
+
+.script-editor .ui-selectable li.ui-selected
+{
+    background-color: lightgray
+}
+
+
+

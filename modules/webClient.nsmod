@@ -1,0 +1,6 @@
+{ 	"id" :"webClient",
+	"title": "Web client",
+	"version": "1.0.0",		
+	"description": "Perform web requests such as retrieving web pages and posting data",
+	"main": "webClient.js"
+}

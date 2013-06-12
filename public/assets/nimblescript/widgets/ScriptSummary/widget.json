@@ -1,0 +1,6 @@
+{
+	"id": "xemware.nimblescript.widget.scriptsummary",
+	"title": "Script Summary",
+	"main": "ScriptSummary",
+	"description": "Display summary of script selected in Script Browser"
+}

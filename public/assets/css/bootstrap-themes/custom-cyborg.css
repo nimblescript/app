@@ -1,0 +1,23 @@
+﻿.fieldset-legend
+{
+    background-color: Black !important;
+}
+
+.modal-header
+{
+    background-color: #282828 !important;
+}
+
+.nav-tabs li > a:hover, .nav-tabs li.active > a, .nav-tabs li.active > a:hover 
+{
+    
+}
+
+.nav-tabs > li > a {
+background-color: #78c8e5 !important;
+}
+
+a.accordion-toggle:hover 
+{
+    color: Black !important;
+}

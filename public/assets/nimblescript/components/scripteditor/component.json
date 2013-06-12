@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.scripteditor",
+	"title": "Script Editor",
+	"main": "ScriptEditor"
+}

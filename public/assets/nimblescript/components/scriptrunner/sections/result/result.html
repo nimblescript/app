@@ -1,0 +1,23 @@
+﻿<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">Output:</label>
+        <div class="controls">
+            <textarea class="input-xlarge output" style="width: 100%" rows="5" readonly>{{ result.output }}</textarea>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">File Lists:</label>
+        <div class="controls">
+            <div class="input-append centered-content">
+                <div>
+                    <select class="trailing-gap file-lists"></select><a class="btn btn-mini trailing-gap" data-action="save-file-list">Save List...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <div class="filelist"></div>
+        </div>
+    </div>
+</form>

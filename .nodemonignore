@@ -1,0 +1,10 @@
+public/*
+.git/*
+logs/*
+.git
+./.git
+./.git/*
+views/*
+./views/*
+tests/*
+./tests/*

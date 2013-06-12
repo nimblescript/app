@@ -1,0 +1,5 @@
+﻿<div class="alert alert-block alert-error">
+{% for e in errors %}
+<div class="field-error">{% if e.title %}<strong>{{ e.title }}: </strong>{% endif %}{{ e.message }}</div>
+{% endfor %}
+</div>

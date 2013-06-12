@@ -1,0 +1,7 @@
+﻿<button {% if className %}class="{{ className }}"{% endif %}>
+    {% if imageUrl && imagePosition == 'left' %}<img src="{{ image }}" />{% endif %}
+    {% if imageIcon && imagePosition == 'left' %}<i class="icon-{{ imageIcon }}"></i>{% endif %}
+    {{ label }}
+    {% if imageUrl && imagePosition == 'right' %}<img src="{{ image }}" />{% endif %}
+    {% if imageIcon && imagePosition == 'right' %}<i class="icon-{{ imageIcon }}"></i>{% endif %}
+</button>

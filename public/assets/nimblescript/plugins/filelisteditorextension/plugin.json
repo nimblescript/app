@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.plugin.filelisteditorextension",
+	"title": "File List Editor Extension",
+	"main": "Extension"
+}

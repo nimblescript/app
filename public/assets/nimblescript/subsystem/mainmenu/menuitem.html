@@ -1,0 +1,3 @@
+﻿<a {% if !disabled %}href="{{ href }}"{% endif %} {% if target %}target="{{ target }}"{% endif %} id="{{ id }}">
+    {% if visible %}<i class="icon-ok"></i>{% endif %}{{ translatedlabel|default(label) }}{% if shortcut %}<span class="menu-shortcut">{{ shortcut }}</span>{% endif %}</a>
+{% if subitems|length %}<ul class="dropdown-menu"></ul>{% endif %}

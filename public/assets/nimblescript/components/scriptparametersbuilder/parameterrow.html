@@ -1,0 +1,11 @@
+﻿<td>{{ type }}</td>
+<td>
+    <input type="text" class="input-small" value="{{ id }}" name="id" /></td>
+<td>
+    <input type="text" name="name" class="input-large" value="{{name}}" /></td>
+<td>
+    <input type="checkbox" name="required" {% if required %}checked="checked"{% endif %} /></td>
+<td>
+    <button class="btn btn-mini btn-danger" data-action="remove">X</button>
+    {% if hassettings %}<button class="btn btn-mini" data-action="settings" data-i18n="script.parameters_builder.settings"></button>{% endif %}
+</td>

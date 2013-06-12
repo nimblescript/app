@@ -1,0 +1,27 @@
+﻿
+.dropdown-menu > li > a
+{
+    line-height: 16px;
+}
+.navbar {
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+.splitter {
+    border-color: #D44413;
+    background: #fffbf8;
+    
+}
+
+.ui-state-default { background-color: #E7653C}
+.ui-state-hover { background-color: #D14F26 }
+.ui-state-highlight { background-color: #D14F26 }
+.ui-state-error { background-color: #eaa }
+
+.navbar .nav > li > a
+{
+    padding: 10px 8px 10px;
+}
+

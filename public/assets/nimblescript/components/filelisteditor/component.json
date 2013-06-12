@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.filelisteditor",
+	"title": "File List Editor",
+	"main": "FileListEditor"
+}

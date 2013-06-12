@@ -1,0 +1,5 @@
+{
+	"id": "xemware.nimblescript.component.repositorybrowser",
+	"title": "Repository Browser",
+	"main": "RepositoryBrowser"
+}

@@ -1,0 +1,15 @@
+﻿<h4 data-i18n="[html]marketplace.publish.summary_heading{% if item %}_url{% endif %}" data-i18n-options='{ "url": "{{ marketplace_url|raw }}" }'></h4>
+{% if item %}
+<div>
+    <span class="field-label" data-i18n="marketplace.publish.name"></span>
+    <span class="">{{ item.name }}</span>
+    <span class="field-label" data-i18n="marketplace.publish.status"></span>
+    <span class="">{{ status }}</span>
+</div>
+<div>
+    <span class="field-label" data-i18n="marketplace.publish.latest_release"></span>
+    <span class="">{{ latest_release_summary }}</span>
+</div>
+{% else %}
+<span data-i18n="marketplace.publish.no_item"></span>
+{% endif %}

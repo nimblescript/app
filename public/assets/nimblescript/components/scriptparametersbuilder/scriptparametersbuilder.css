@@ -1,0 +1,19 @@
+﻿.script-parameters-builder
+{
+    height: 100%
+}
+
+.script-parameters-builder .code
+{
+    height: 50%;
+}
+
+.script-parameters-builder .code .editor
+{
+    height: 100%
+}
+
+.script-parameters-builder th
+{
+    text-align: left
+}

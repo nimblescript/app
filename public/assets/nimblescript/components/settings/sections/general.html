@@ -1,0 +1,91 @@
+﻿<form>
+<div class="user-interface-section">
+    <h4>User Interface</h4>
+    <div class="settings-row">
+        <label><span>UI Theme:</span><span>
+            <select name="ui-theme"  class="input-xlarge">
+                <option label="Standard" value="standard">Standard</option>
+                <option label="United" value="united">United</option>
+                <option label="Cerulean" value="cerulean">Cerulean</option>
+                <option label="Spacelab" value="spacelab">Spacelab</option>
+                <option label="Cyborg" value="cyborg">Cyborg</option>
+                <option label="Superhero" value="superhero">Superhero</option>
+                <option label="Spruce" value="spruce">Spruce</option>
+                <option label="Slate" value="slate">Slate</option>
+                <option label="Simplex" value="simplex">Simplex</option>
+                <option label="Readable" value="readable">Readable</option>
+                <option label="Journal" value="journal">Journal</option>
+                <option label="Cosmo" value="cosmo">Cyborg</option>
+                <option label="Amelia" value="amelia">Amelia</option>
+            </select>
+        </span>
+        </label>
+    </div>
+    <div class="settings-row">
+        <label><span>Script Editor Theme:</span><span>
+            <select name="script-editor-theme"  class="input-xlarge">
+                <optgroup label="Bright">
+                    <option value="ace/theme/chrome">Chrome</option>
+                    <option value="ace/theme/clouds">Clouds</option>
+                    <option value="ace/theme/crimson_editor">Crimson Editor</option>
+                    <option value="ace/theme/dawn">Dawn</option>
+                    <option value="ace/theme/dreamweaver">Dreamweaver</option>
+                    <option value="ace/theme/eclipse">Eclipse</option>
+                    <option value="ace/theme/github">GitHub</option>
+                    <option value="ace/theme/solarized_light">Solarized Light</option>
+                    <option value="ace/theme/textmate" selected="selected">TextMate</option>
+                    <option value="ace/theme/tomorrow">Tomorrow</option>
+                </optgroup>
+                <optgroup label="Dark">
+                    <option value="ace/theme/clouds_midnight">Clouds Midnight</option>
+                    <option value="ace/theme/cobalt">Cobalt</option>
+                    <option value="ace/theme/idle_fingers">idleFingers</option>
+                    <option value="ace/theme/kr_theme">krTheme</option>
+                    <option value="ace/theme/merbivore">Merbivore</option>
+                    <option value="ace/theme/merbivore_soft">Merbivore Soft</option>
+                    <option value="ace/theme/mono_industrial">Mono Industrial</option>
+                    <option value="ace/theme/monokai">Monokai</option>
+                    <option value="ace/theme/pastel_on_dark">Pastel on dark</option>
+                    <option value="ace/theme/solarized_dark">Solarized Dark</option>
+                    <option value="ace/theme/twilight">Twilight</option>
+                    <option value="ace/theme/tomorrow_night">Tomorrow Night</option>
+                    <option value="ace/theme/tomorrow_night_blue">Tomorrow Night Blue</option>
+                    <option value="ace/theme/tomorrow_night_bright">Tomorrow Night Bright</option>
+                    <option value="ace/theme/tomorrow_night_eighties">Tomorrow Night 80s</option>
+                    <option value="ace/theme/vibrant_ink">Vibrant Ink</option>
+                </optgroup>
+            </select>
+        </span>
+        </label>
+    </div>
+</div>
+<div class="security">
+    <h4>Security</h4>
+    <div class="settings-row">
+        <label><span>Password:</span><span><input type="password"  class="input-xlarge" name="security-password" /></span>
+        </label>
+    </div>
+    <div class="settings-row">
+        <label><span>Confirm:</span><span><input type="password" class="input-xlarge" name="security-confirm-password" /></span>
+        </label>
+    </div>
+</div>
+<div class="web-server">
+    <h4>Web Server</h4>
+    <div class="settings-row">
+        <label><span>Port:</span><span><input type="text"  class="input-small" name="webserver-port" /></span>
+        </label>
+    </div>
+    <div class="settings-row">
+        <label><span>Localhost only:</span><span><input type="checkbox" name="webserver-localhost-only" /></span>
+        </label>
+    </div>
+</div>
+<div class="user-data">
+    <h4>User Data</h4>
+    <div class="settings-row">
+        <label><span>Directory:</span><span><input type="text" readonly="readonly" class="input-xlarge" name="userdata-directory" /></span>
+        </label>
+    </div>
+</div>
+</form>

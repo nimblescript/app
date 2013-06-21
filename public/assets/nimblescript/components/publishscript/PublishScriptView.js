@@ -149,50 +149,72 @@
                     'keyup .field-row input': 'updateState',
                     'change .field-row input': 'updateState',
                     'change .field-row textarea': 'updateState',
-                    'change .field-row select': 'updateState'
+                    'change .field-row select': 'updateState',
+                    'click [data-action=new-script]': 'newScript'
                 },
             onRender: function ()
             {
                 var self = this;
+
+                var notify = this.showWaiting();
+
                 this.itemSummaryRegion.show(new ItemSummaryView({
                     model: new Backbone.DeepModel({ item: this.model.get('item') })
                 }));
-                this.newReleaseRegion.show(new NewReleaseView({
-                    model: new Backbone.DeepModel({
-                        version: this.model.get('summary.version'),
-                        release_number: this.model.get('summary.release'),
-                        summary: '', release_notes: '',
-                        license: this.model.get('item.latest_release.0.licese_type')
-                    }),
-                    licenses: this.model.get('licenses')
-                }));
-                this.ui.publishers.select2({
-                    width: 'off',
-                    data: function ()
-                    {
-                        var data = _.map(self.model.get('publishers'), function (publisher)
-                        {
-                            return { id: publisher.publisher_id, text: publisher.name };
-                        });
-                        return ({ results: data, text: 'text' });
-                    }
-                }).select2('val', this.model.get('item.publisher_id'));
 
-                this.loadItems(this.model.get('item.publisher_id'), function ()
-                {
-                    self.ui.items.select2({
-                        width: 'off',
-                        data: function ()
-                        {
-                            var data = _.map(self.model.get('items'), function (item)
+                Async.parallel([
+                    function newRelease(cb)
+                    {
+                        self.newReleaseRegion.show(new NewReleaseView({
+                            model: new Backbone.DeepModel({
+                                version: self.model.get('summary.version'),
+                                release_number: self.model.get('summary.release'),
+                                summary: '', release_notes: '',
+                                license: self.model.get('item.latest_release.0.licese_type')
+                            }),
+                            licenses: self.model.get('licenses')
+                        }));
+                        cb();
+                    },
+                    function publishers(cb)
+                    {
+                        self.ui.publishers.select2({
+                            width: 'off',
+                            data: function ()
                             {
-                                return { id: item.item_id, text: item.name };
-                            });
-                            return ({ results: data, text: 'text' });
-                        }
-                    }).select2('val', self.model.get('item.item_id'));
+                                var data = _.map(self.model.get('publishers'), function (publisher)
+                                {
+                                    return { id: publisher.publisher_id, text: publisher.name };
+                                });
+                                return ({ results: data, text: 'text' });
+                            }
+                        }).select2('val', self.model.get('item.publisher_id') || _.result(_.first(self.model.get('publishers')), 'publisher_id'));
+                        cb();
+                    },
+                    function items(cb)
+                    {
+                        self.loadItems(self.model.get('item.publisher_id'), function ()
+                        {
+                            self.ui.items.select2({
+                                width: 'off',
+                                data: function ()
+                                {
+                                    var data = _.map(self.model.get('items'), function (item)
+                                    {
+                                        return { id: item.item_id, text: item.name };
+                                    });
+                                    return ({ results: data, text: 'text' });
+                                }
+                            }).select2('val', self.model.get('item.item_id'));
+                            cb();
+                        });
+                    }
+                ], function complete()
+                {
+                    notify.remove();
+                    self.updateState();
                 });
-                this.updateState();
+                
 
             },
             load: function (scriptPath, options, callback)
@@ -205,7 +227,7 @@
                     scriptPath = this.options.scriptPath;
 
                 var scriptSummary, categories, licenses, existingItem;
-                var notify = Notify.loading({ icon: false, text: 'Loading...' });
+                var notify = this.showWaiting();
                 Async.parallel([
                     function publishers(cb)
                     {
@@ -340,19 +362,22 @@
             publisherChanged: function (e)
             {
                 var self = this;
+                var notify = this.showWaiting();
                 this.loadItems(e.val, function ()
                 {
                     self.ui.items.select2('val', self.model.get('item.item_id'), true);
                     self.updateState();
-
+                    notify.remove();
                 });
             },
             itemChanged: function (e)
             {
                 var self = this;
+                var notify = this.showWaiting();
                 this.loadItem(e.val, function ()
                 {
                     self.updateState();
+                    notify.remove();
                 });
             },
             selectedPublisher: function ()
@@ -431,6 +456,15 @@
                         ));
                     }
                 })
+            },
+            showWaiting: function ()
+            {
+                return Notify.loading({ icon: false, text: T.t('misc.loading_ajax') });
+            },
+            newScript: function ()
+            {
+                if (!_.isEmpty(this.selectedPublisher()))
+                    window.open(this._marketplaceManager.marketplaceUrl('publisher_new_script', { publisher_id: this.selectedPublisher() }), '_blank');
             }
         });
     }

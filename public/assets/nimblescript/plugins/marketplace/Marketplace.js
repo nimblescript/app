@@ -284,13 +284,15 @@
                 },
                 itemPublicUrl: function(id)
                 {
-                    return this.marketplaceUrl('item', { item_id: id });
+                    return this.marketplaceUrl('item_public', { item_id: id });
                 },
                 marketplaceUrl: function(id,options)
                 {
                     var url = App.request('settings:getmanager').get('marketplace.url');
                     switch (id)
                     {
+                        case 'publisher_new_script':
+                            return url + '/admin/publisher/' + options.publisher_id + '/item/new/script';
                         case 'account':
                             return url + '/account';
                         case 'item_public':

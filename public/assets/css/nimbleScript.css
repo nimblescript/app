@@ -1483,3 +1483,12 @@ textarea[readonly]::-ms-value
 {
     height: 100%
 }
+
+.context-menu-item
+{
+    color: black;
+}
+.context-menu-item.disabled
+{
+    color: lightgray
+}

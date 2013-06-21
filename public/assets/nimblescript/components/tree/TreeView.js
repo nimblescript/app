@@ -23,7 +23,12 @@
                         initialAjaxData: null,
                         lazyUrl: null,
                         onPostInit: null,
-                        postLazyRead: null
+                        postLazyRead: null,
+                        dnd: {
+                            callback: null,
+                            autoExpand: 500,
+                            preventVoidMoves: true
+                        }
                     });
                 },
                 onRender: function ()
@@ -97,21 +102,56 @@
                         {
                             viewSelf.customTrigger('node', 'blur', viewSelf.tree, node);
                         },
-                        onClick: function (node, eVent)
+                        onClick: function (node, event)
                         {
-                            viewSelf.customTrigger('node', 'click', viewSelf.tree, node, eVent);
+                            viewSelf.customTrigger('node', 'click', viewSelf.tree, node, event);
                         },
                         onSelect: function (selected, node)
                         {
                             viewSelf.customTrigger('node', 'select', viewSelf.tree, node, selected);
                         },
-                        onDblClick: function (node, eVent)
+                        onDblClick: function (node, event)
                         {
-                            viewSelf.customTrigger('node', 'dblclick', viewSelf.tree, node, eVent);
+                            viewSelf.customTrigger('node', 'dblclick', viewSelf.tree, node, event);
                             if (viewSelf.options.expandOnDblClick)
                                 if (node.data.isFolder)
                                     node.toggleExpand();
-
+                        },
+                        dnd: {
+                            autoExpandMS: viewSelf.options.dnd.autoExpand,
+                            preventVoidModes: viewSelf.options.dnd.preventVoidModes,
+                            onDragStart: function (dragNode)
+                            {
+                                return viewSelf.options.dnd.callback ? viewSelf.options.dnd.callback({ event: 'dragstart', dragNode: dragNode }) : false;
+                            },
+                            onDragStop: function (dragNode)
+                            {
+                                return viewSelf.options.dnd.callback && viewSelf.options.dnd.callback({ event: 'dragstop', dragNode: dragNode } );
+                            },
+                            onDragEnter: function (dragNode, targetNode)
+                            {
+                                return viewSelf.options.dnd.callback ? viewSelf.options.dnd.callback({ event: 'dragenter', dragNode: dragNode, targetNode: targetNode }) : false;
+                            },
+                            onDragOver: function (dragNode, targetNode, hitMode)
+                            {
+                                return viewSelf.options.dnd.callback ? viewSelf.options.dnd.callback({
+                                    event: 'dragover',
+                                    dragNode: dragNode, targetNode: targetNode,
+                                    hitMode: hitMode
+                                }) : false;
+                            },
+                            onDrop: function (dragNode, targetNode, hitMode, ui, draggable)
+                            {
+                                viewSelf.options.dnd.callback && viewSelf.options.dnd.callback({
+                                    event: 'drop',
+                                    dragNode: dragNode, targetNode: targetNode,
+                                    hitMode: hitMode, ui: ui, draggable: draggable
+                                });
+                            },
+                            onDragLeave: function (dragNode, targetNode)
+                            {
+                                viewSelf.options.dnd.callback && viewSelf.options.dnd.callback({ event: 'dragleave', dragNode: dragNode, targetNode: targetNode });
+                            }
                         }
                     };
                     _.extend(opts, _.pick(this.options, 'onCreate'));
@@ -144,7 +184,7 @@
                 },
                 renameNode: function (node, callback)
                 {
-                    // PreVent modal actions closing
+                    // Prevent modal actions closing
                     ModalHelper.GlobalDisableHide = true;
                     node.activate();
                     var self = this;
@@ -152,7 +192,7 @@
                     // Disable dynatree mouse- and key handling
                     this.tree.$widget.unbind();
                     // Replace node with <input>
-                    var $input = $('<input class="tree-editing-node" value="' + prevTitle + '">').css('z-index', 1000);
+                    var $input = $('<input class="tree-editing-node" value="' + prevTitle + '">'); // .css('z-index', 1000);
                     $(".dynatree-title", node.span).empty().append($input);
                     $(node.span).addClass('editing');
                     // Focus <input> and bind keyboard handler
@@ -172,7 +212,6 @@
                           }
                       }).blur(function (e)
                       {
-
                           var newTitle = $input.val();
                           callback(newTitle, function (finalNewTitle)
                           {
@@ -184,6 +223,7 @@
                                   // Re-enable mouse and keyboard handlling
                                   self.tree.$widget.bind();
                                   // node.focus();
+                                  return true;
                               }
                               else
                               {
@@ -232,11 +272,11 @@
                         }
                     });
                 },
-                customTrigger: function (parentType, eVentName)
+                customTrigger: function (parentType, eventName)
                 {
                     var args = Array.prototype.slice.call(arguments, 2);
-                    this.trigger.apply(this, [parentType, eVentName].concat(args));
-                    this.trigger.apply(this, [parentType + ':' + eVentName].concat(args));
+                    this.trigger.apply(this, [parentType, eventName].concat(args));
+                    this.trigger.apply(this, [parentType + ':' + eventName].concat(args));
                 },
                 setData: function (data)
                 {

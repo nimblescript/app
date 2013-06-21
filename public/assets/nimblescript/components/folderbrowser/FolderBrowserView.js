@@ -67,7 +67,8 @@
                         dironly: this.options.dironly,
                         allowRename: this.options.allowRename,
                         onContextMenu: this.options.onContextMenu,
-                        nodeActionOnContext: this.options.nodeActionOnContext
+                        nodeActionOnContext: this.options.nodeActionOnContext,
+                        dnd: this.options.dnd
                     });
                 this.$el.append(this.tree.render().$el);
                 this.listenTo(this.tree, 'all', this.onTreeEVent)

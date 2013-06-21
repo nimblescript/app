@@ -151,11 +151,18 @@
                         renameHandler: this._onRenameItem,
                         deleteHandler: this._onDeleteItem,
                         postProcess: this.onTreePostProcess
+                        /*
+                        dnd: {
+                            callback: this.onDNDEvent
+                        }*/
 
                     })
                     this.folderBrowserView = new FolderBrowserView(opts);
                     this.folderBrowser.show(this.folderBrowserView);
                     this.listenToEvents();
+                },
+                onDNDEvent: function(e)
+                {
                 },
                 onTreePostProcess: function (data, dataType)
                 {
@@ -236,7 +243,7 @@
                             _.extend(opts.items, {
                                 "sep1": "-------",
                                 "rename": { name: "Rename" },
-                                "paste": { name: "Paste" },
+                                "paste": { name: "Paste", disabled: true },
                                 "delete": { name: "Delete" }
                             })
                         }
@@ -247,8 +254,8 @@
                             "run": { name: "Run" },
                             "edit": { name: "Edit" },
                             "sep1": "-------",
-                            "copy": { name: "Copy" },
-                            "paste": { name: "Paste" },
+                            "copy": { name: "Copy", disabled: true },
+                            "paste": { name: "Paste", disabled: true },
                             "delete": { name: "Delete" },
                             "rename": { name: "Rename" }
                         }

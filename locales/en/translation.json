@@ -86,7 +86,8 @@
 		"please_wait": "Please wait",
 		"yes": "Yes",
 		"no": "No",
-		"cancel": "Cancel"
+		"cancel": "Cancel",
+		"loading_ajax": "Loading..."
 	},
 	"system":
 	{
@@ -182,8 +183,8 @@
 		"publish":
 		{
 			"publishing_existing": "A published script has been automatically selected using marketplace details in getSummary()",
-			"publishing_script": "You are publishing new release of <a href='#'>__name__<a/>",
-			"publish_as": "Publish as:",
+			"publishing_script": "You are publishing a new release of <a href='#'>__name__<a/>",
+			"publish_as": "Publisher:",
 			"existing_release": "Script:",
 			"new_script": "Create new script in marketplace",
 			"summary_heading": "Script Summary",
@@ -203,8 +204,8 @@
 				"<ol>",
 				"<li>Setup a publisher on the marketplace</li>",
 				"<li>Create a new Script Item</li>",
-				"<li>return 'marketplace: { id: 'XXXX}' in getSummary, where XXXX is the Item Id()</li>",
-				"<li>Update version and release in getSummary() for each release</li>",
+				"<li>return 'marketplace: { id: 'XXXX}' in getSummary, where XXXX is the Item Id that you can grab from the Script admin page</li>",
+				"<li>Update the version and release in getSummary() for each release</li>",
 				"<li>Use this form to publish releases</li>",
 				"</ol>"
 			],

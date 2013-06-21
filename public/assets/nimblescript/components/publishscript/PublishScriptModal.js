@@ -1,5 +1,5 @@
-﻿define(['require', 'underscore', 'backbone', 'App', 'logger', 'modalhelper', './PublishScriptView', 'translate', 'async'],
-    function (require, _, Backbone, App, Logger, ModalHelper, PublishScriptView, T, Async)
+﻿define(['require', 'underscore', 'backbone', 'App', 'logger', 'modalhelper', './PublishScriptView', 'notify','translate', 'async'],
+    function (require, _, Backbone, App, Logger, ModalHelper, PublishScriptView, Notify,T, Async)
     {
         "use strict"
         function PublishScriptModal(options)
@@ -12,6 +12,7 @@
                 show: function (callback)
                 {
                     var self = this;
+                    var notify = Notify.loading({ icon: false, text: T.t('misc.loading_ajax') });
                     Async.waterfall([
                         function marketplaceAccess(cb)
                         {
@@ -32,6 +33,7 @@
 
                         function show(cb)
                         {
+                            notify.remove();
                             self.view = new PublishScriptView(self.options);
                             self.view.load(null, function (err)
                             {
